@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () =>
             threshold: 0.1,
         });
         
-        const animatedElements = document.querySelectorAll(".landing-heading, .landing-description");
+        const animatedElements = document.querySelectorAll(".landing-heading, .landing-description, .btn-play");
         
         animatedElements.forEach((element) =>
         {

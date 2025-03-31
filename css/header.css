@@ -50,6 +50,7 @@ header h1 a
     transition: all .3s;
     background-color: var(--bg-color);
     color: var(--text-color);
+    margin-right: 50px;
 }
 
 header h1 a:hover
