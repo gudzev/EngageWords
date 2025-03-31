@@ -158,7 +158,6 @@ export const words =
     new Word("barf", ["povraćati"], ""),
     new Word("uncharted", ["nemapirano", "neistraženo"], ""),
     new Word("tingling", ["peckanje"], ""),
-    new Word("flogging the log", ["masturbirati"], ""),
     new Word("haze you", ["izigrati i poniziti"], ""),
     new Word("ought", ["trebalo bi"], ""),
     new Word("subsequent", ["sledeći"], ""),

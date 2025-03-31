@@ -124,15 +124,26 @@
     transform: scale(1.03);
 }
 
+
+@media (min-width:901px) and (max-width:1600px) 
+{
+    .game
+    {
+        margin-top: 70px;
+    }
+}
+
+
+
 @media only screen and (max-width: 900px) 
 {
     .wrapper
     {
-    position: fixed;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
     }
 
     .game-container
