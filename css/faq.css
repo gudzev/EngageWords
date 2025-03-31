@@ -36,6 +36,7 @@
 .orange
 {
     color: orange;
+    margin: 0px 10px;
 }
 
 .answer
@@ -103,6 +104,11 @@
         font-size: 1.4rem;
         padding: 10px 0;
         margin-bottom: 10px;
+    }
+
+    .orange
+    {
+        margin: 0px 5px;
     }
 }
 

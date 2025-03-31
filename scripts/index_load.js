@@ -1,13 +1,3 @@
-window.onload = () => 
-{
-    const wrapper = document.querySelector(".wrapper");
-
-    if(wrapper) 
-    {
-        wrapper.remove();
-    }
-};
-
 document.addEventListener("DOMContentLoaded", () =>
 { 
     const observer = new IntersectionObserver((entries) => { entries.forEach((entry) =>
@@ -23,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () =>
             threshold: 0.1,
         });
         
-        const animatedElements = document.querySelectorAll(".landing-heading, .landing-description, .btn-play, .feature, .faq-li");
+        const animatedElements = document.querySelectorAll(".landing-heading, .landing-description, .btn-play, .feature, .faq-li, .faq-page-heading");
         
         animatedElements.forEach((element) =>
         {
