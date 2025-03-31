@@ -64,10 +64,6 @@
     {
         width: 100%;
         height: calc(100dvh);
-    
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
     
     .landing-container
@@ -77,16 +73,19 @@
     
     .landing-heading
     {
-        font-size: 1.6rem;
-        color: var(--text-color);
-        font-weight: bold;
-        text-align: center;
+        font-size: 1.5rem;
     }
     
     .landing-description
     {
         font-size: 1.1rem;
-        color: var(--text-color);
-        text-align: center;
     }
+
+    .btn-play
+    {
+        margin-top: 20px;
+        width: 200px;
+        height: 60px;
+    }
+
 }
