@@ -1,5 +1,15 @@
-document.addEventListener("DOMContentLoaded", () =>
+window.onload = () => 
 {
+    const wrapper = document.querySelector(".wrapper");
+
+    if(wrapper) 
+    {
+        wrapper.remove();
+    }
+};
+
+document.addEventListener("DOMContentLoaded", () =>
+{ 
     const observer = new IntersectionObserver((entries) => { entries.forEach((entry) =>
         {
             if(entry.isIntersecting)
@@ -13,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () =>
             threshold: 0.1,
         });
         
-        const animatedElements = document.querySelectorAll(".landing-heading, .landing-description, .btn-play");
+        const animatedElements = document.querySelectorAll(".landing-heading, .landing-description, .btn-play, .feature, .faq-li");
         
         animatedElements.forEach((element) =>
         {

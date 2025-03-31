@@ -1,5 +1,5 @@
 const mobileNavigation = document.querySelector(".mobile-nav");
-const mobileNavigationChildren = document.querySelectorAll("li");
+const mobileNavigationChildren = document.querySelectorAll(".list-item");
 const openMenu = document.querySelector(".hamburger-bar");
 const closeMenu = document.querySelector(".close-bar");
 

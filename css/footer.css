@@ -1,0 +1,6 @@
+footer
+{
+    height: auto;
+    background-color: var(--page-bg-color-2);
+    min-height: 200px;
+}

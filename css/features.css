@@ -3,4 +3,159 @@
     background-color: var(--page-bg-color-2);
     height: 100dvh;
     width: 100%;
+    display: grid;
+    grid-template-areas:"top-left middle top-right"
+                        "middle-left middle middle-right"
+                        "bottom-left middle bottom-right";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 50px 100px;
+}
+
+.top-left
+{
+    grid-area: top-left;
+}
+
+.middle-right
+{
+    grid-area: middle-right;
+}
+
+.bottom-left
+{
+    grid-area: bottom-left;
+}
+
+.feature
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+    width: 40vw;
+    height: 30vh;
+    border-radius: 15px;
+    background-color: var(--page-bg-color);
+    padding: 20px;
+}
+
+.feature h1
+{
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--text-color);
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.feature p
+{
+    text-align: center;
+    color: var(--text-color);
+    z-index: 50;
+    max-width: 70%;
+}
+
+.bg-img
+{
+    color: var(--text-color);
+}
+
+.flex-center
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0;
+    padding: 0;
+    margin: 0;
+    width: 60%;
+}
+
+@media only screen and (max-width: 900px) 
+{
+    .features-page
+    {
+        display: grid;
+        grid-template-areas:"middle-1"
+                            "middle-2"
+                            "middle-3";
+        padding: 10px 10px;
+    }
+    
+    .top-left
+    {
+        grid-area: middle-1;
+    }
+    
+    .middle-right
+    {
+        grid-area: middle-2;
+    }
+    
+    .bottom-left
+    {
+        grid-area: middle-3;
+    }
+    
+    .feature
+    {
+        width: 95vw;
+        height: 30vh;
+        border-radius: 15px;
+        background-color: var(--page-bg-color);
+        padding: 15px;
+        flex-direction: column;
+    }
+    
+    .feature h1
+    {
+        text-align: center;
+        font-size: 1rem;
+        font-weight: bold;
+        color: var(--text-color);
+        margin-bottom: 10px;
+    }
+
+    .bg-img
+    {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0%;
+        z-index: 20;
+    }
+
+    .feature p
+    {
+        text-align: center;
+        color: var(--text-color);
+        z-index: 50;
+        max-width: 100%;
+    }
+
+    .flex-center
+    {
+        width: 100%;
+    }
+}
+
+@media (min-width:901px) and (max-width:1600px) 
+{
+    .feature
+    {
+        width: 40vw;
+        height: 30vh;
+        padding: 20px;
+    }
+
+    .flex-center
+    {
+        width: 80%;
+    }
 }

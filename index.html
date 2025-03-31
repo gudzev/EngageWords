@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/load.css">
     <link rel="stylesheet" href="css/features.css">
     <link rel="stylesheet" href="css/faq.css">
+    <link rel="stylesheet" href="css/footer.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,47 +22,134 @@
 </head> 
 <body class="page-bg">
 
-    <header>
+    <div class="wrapper">
+    </div>
 
-        <h1><a href="index.html">EngageWords</a></h1>
-        <i class="fa fa-bars fa-2x hamburger-bar" aria-hidden="true"></i>
+        <header>
 
-        <nav class="mobile-nav">
+            <h1><a href="index.html">EngageWords</a></h1>
+            <i class="fa fa-bars fa-2x hamburger-bar" aria-hidden="true"></i>
+    
+            <nav class="mobile-nav">
+    
+                <ul>
+    
+                    <i class="fa fa-times fa-2x close-bar" aria-hidden="true"></i>
+    
+                    <li class="list-item"><a href="#">Početna</a></li>
+                    <li class="list-item"><a href="#karakteristike">Karakteristike</a></li>
+                    <li class="list-item"><a href="#pitanja">Česta pitanja</a></li>
+    
+                </ul>
+    
+            </nav>
+    
+        </header>
+    
+        <section class="landing-page">
+    
+            <div class="landing-container">
+                <h1 class="landing-heading">Unapredi svoje znanje engleskog uz EngageWords!</h1>
+                <h2 class="landing-description">Uči nove reči kroz zabavne i interaktivne kvizove. Počni danas!</h2>
+                <a class="btn btn-play" href="game.html">Zaigraj danas!</a>
+            </div>
+    
+        </section>
+    
+        <section class="features-page" id="karakteristike">
+    
+            <div class="feature top-left">
+    
+                <i class="fa fa-random fa-5x bg-img" aria-hidden="true"></i>
+    
+                <div class="flex-center">
+                    <h1 class="feature-h1">Nasumično generisane reči</h1>
+    
+                    <p>
+                        Nasumično odabrane reči testiraju tvoje znanje prevoda bez ponavljanja istih reči. Svaki pokušaj je drugačiji, što igru čini izazovnom i dinamičnom!
+                    </p>
+                </div>
+    
+            </div>
+    
+            <div class="feature middle-right">
+    
+                <i class="fa fa-list fa-5x bg-img" aria-hidden="true"></i>
+    
+                <div class="flex-center">
+                    <h1 class="feature-h1">Prati svoj niz tačnih reči!</h1>
+    
+                    <p>
+                        Prati svoj niz tačno pogodjenih reči i izazovi sebe da postigneš što duži winstreak. Svaka tačna reč ti donosi novi korak ka rekordima!
+                    </p>
+                </div>
+    
+            </div>
+    
+            <div class="feature bottom-left">
+    
+                <i class="fa fa-database fa-5x bg-img" aria-hidden="true"></i>
+                
+                <div class="flex-center">
+                    <h1 class="feature-h1">Čuvanje podataka za sledeću posetu</h1>
+    
+                    <p>
+                        Tvoji podaci, kao što su skorovi i niz tačnih reči, biće sačuvani i biće ti dostupni pri sledećem dolasku na sajt.
+                    </p>
+                </div>
+    
+            </div>
+    
+         </section>
+    
+        <section class="faq-page" id="pitanja">
 
             <ul>
 
-                <i class="fa fa-times fa-2x close-bar" aria-hidden="true"></i>
+                <h1 class="faq-page-heading">Pitanja i odgovori</h1>
 
-                <li><a href="#">Početna</a></li>
-                <li><a href="#karakteristike">Karakteristike</a></li>
-                <li><a href="#pitanja">Česta pitanja</a></li>
+                <li class="faq-li">
+                    <h1 class="question">Koje reči se pojavljuju u igri?<i class="fa fa-sort-desc orange" aria-hidden="true"></i></h1>
+                    <p class="answer hidden">
+                    Igra koristi reči iz popularnih video igara kao što su Cyberpunk 2077 i The Witcher 3.
+                    Ove igre su bogate jedinstvenim terminima, frazama i nazivima koji zahtevaju naprednije znanje engleskog jezika.
+                    </p>
+                </li>
+
+                <li class="faq-li">
+                    <h1 class="question">Na koji način se čuvaju podaci o mom nizu tačnih odgovara i ukupan rezultat?<i class="fa fa-sort-desc orange" aria-hidden="true"></i></h1>
+                    <p class="answer hidden">
+                        Podaci se čuvaju u localStorage, samim tim će Vaš rezultat biti dostupan samo na uređaju na kom ste prethodno igrali.
+                    </p>
+                </li>
+
+                <li class="faq-li">
+                    <h1 class="question">Da li postoje planovi za dalje unapređivanje aplikacije?<i class="fa fa-sort-desc orange" aria-hidden="true"></i></h1>
+                    <p class="answer hidden">
+                        Da! U budućnosti će biti dodate opcije za težinu igru i slično.
+                    </p>
+                </li>
+
+                <li class="faq-li">
+                    <h1 class="question">Da li će biti novih reči u budućnosti?<i class="fa fa-sort-desc orange" aria-hidden="true"></i></h1>
+                    <p class="answer hidden">
+                        Kako budem naletao na nove nepoznate reči, one će biti dodate u igru.
+                    </p>
+                </li>
 
             </ul>
+    
+        </section>
 
-        </nav>
+        <footer>
 
-    </header>
+            <p>Copyright &copy; Marko Gudžev</p>
 
-    <section class="landing-page">
-
-        <div class="landing-container">
-            <h1 class="landing-heading">Unapredi svoje znanje engleskog uz EngageWords!</h1>
-            <h2 class="landing-description">Uči nove reči kroz zabavne i interaktivne kvizove. Počni danas!</h2>
-            <a class="btn btn-play" href="game.html">Zaigraj danas!</a>
-        </div>
-
-    </section>
-
-    <section class="features-page" id="karakteristike">
-
-    </section>
-
-    <section class="faq-page" id="pitanja">
-
-    </section>
+        </footer>
 
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/index_load.js" defer></script>
+    <script src="scripts/faq.js" defer></script>
     
 </body>
 </html>
