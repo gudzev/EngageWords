@@ -10,7 +10,7 @@
 .game-container
 {
     position: relative;
-    height: 100dvh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,12 +28,6 @@
     margin-bottom: 10px;
 }
 
-.score-container
-{
-    width: 100%;
-    height: 100%;
-}
-
 .game
 {
     width: 900px;
@@ -46,7 +40,9 @@
         "green yellow";
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 100px 1fr 1fr;
-    gap: 50px;
+    gap: 25px;
+    place-items: center;
+    margin-bottom: 50px;
 }
 
 .english-word
@@ -66,7 +62,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: auto;
+    min-width: 300px;
+    width: 400px;
+    max-width: 400px;
     height: 90px;
     font-size: 1.2rem;
     color: white;
@@ -125,8 +123,43 @@
     transform: scale(1.03);
 }
 
+.score-container
+{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
 
-@media (min-width:901px) and (max-width:1600px) 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    outline: 1px solid orange;
+}
+
+.score-container h1
+{
+    color: var(--text-color);
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.score-container h2
+{
+    color: var(--text-color);
+    text-align: center;
+    font-size: 1rem;
+}
+
+.orange
+{
+    color: orange;
+    font-weight: bold;
+}
+
+
+@media (min-width:901px) and (max-width:1720px) 
 {
     .game
     {
@@ -159,7 +192,7 @@
     .game
     {
         width: 95%;
-        height: 400px;
+        height: 500px;
         padding: 10px;
         display: grid;
         grid-template-areas:
@@ -174,34 +207,45 @@
 
     .score
     {
-        width: 95%;
-        height: 200px;
+        width: 97.5%;
+        height: 250px;
+        margin-bottom: 20px;
+    }
+
+    .score-container
+    {
+        width: 100%;
+        height: 100%;
+        padding: 5px;
+        gap: 10px;
+        outline: 1px solid orange;
+    }
+
+    .score-container h1
+    {
+        font-size: 1.1rem;
+    }
+
+    .score-container h2
+    {
+        font-size: .9rem;
     }
 
     .english-word
     {
         font-size: 1.7rem;
-        color: var(--text-color);
-        text-shadow: 1px 1px black;
-        text-align: center;
         grid-area: question;
     }
 
     .word-meaning
     {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
         width: 160px;
         height: 120px;
         font-size: 1rem;
-        color: white;
-        text-shadow: 1px 1px black;
-        border-radius: 15px;
         cursor: pointer;
         transition: all .3s;
         text-align: center;
         overflow-wrap: break-word;
+        min-width: 0px;
     }
 }

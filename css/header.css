@@ -139,8 +139,8 @@ header h1 a:hover
         text-decoration: none;
         width: 100%;
         transition: all .3s;
-        border-top: 1px solid var(--text-color);
-        border-bottom: 1px solid var(--text-color);
+        border-top: 1px solid orange;
+        border-bottom: 1px solid orange;
     }
     
     header nav ul li a:hover
