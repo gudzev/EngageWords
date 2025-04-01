@@ -9,11 +9,11 @@ footer.innerHTML = `
 
                 <div class="footer-links">
     
-                    <a class="fa fa-github-square" aria-hidden="true" href="https://github.com/gudzev" target="_blank"></a>
+                    <a class="fa fa-github-square" href="https://github.com/gudzev" target="_blank"></a>
     
-                    <a class="fa fa-steam-square" aria-hidden="true" href="https://steamcommunity.com/id/gudzev/" target="_blank"></a>
+                    <a class="fa fa-steam-square" href="https://steamcommunity.com/id/gudzev/" target="_blank"></a>
     
-                    <a class="fa fa-envelope" aria-hidden="true" href="mailto:mgudzev@gmail.com"></a>
+                    <a class="fa fa-envelope" href="mailto:mgudzev@gmail.com"></a>
     
                 </div>
             </div>
