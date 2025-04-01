@@ -1,4 +1,4 @@
-import { saveScore, score} from "../scripts/score.js";
+import { score } from "../scripts/score.js";
 
 export class Word
 {
@@ -28,19 +28,19 @@ export class Word
         {
             wrongWord1 = this.generateWord();
         } 
-        while(wrongWord1 === correctWord);
+        while(wrongWord1[0] === correctWord[0]);
         
         do 
         {
             wrongWord2 = this.generateWord();
         } 
-        while (wrongWord2 === correctWord || wrongWord2 === wrongWord1);
+        while (wrongWord2[0] === correctWord[0] || wrongWord2[0] === wrongWord1[0]);
         
         do 
         {
             wrongWord3 = this.generateWord();
         } 
-        while (wrongWord3 === correctWord || wrongWord3 === wrongWord1 || wrongWord3 === wrongWord2);
+        while (wrongWord3[0] === correctWord[0] || wrongWord3[0] === wrongWord1[0] || wrongWord3[0] === wrongWord2[0]);
         
 
         let wordArray = this.shuffle([correctWord[0], wrongWord1[0], wrongWord2[0], wrongWord3[0]]);
@@ -80,6 +80,12 @@ export class Word
                     <h2>Tačnih reči: <span class="orange score-correct-choices">${score.correctChoices}</span></h2>
 
                     <h2>Netačnih reči: <span class="orange score-wrong-choices">${score.wrongChoices}</span></h2>
+
+                </div>
+
+                <div class="reset-container">
+
+                    <a class="reset-btn orange"><i class="fa fa-refresh orange-icon-margin" aria-hidden="true"></i>Restartuj rezultat</a>
 
                 </div>
 

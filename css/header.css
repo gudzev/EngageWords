@@ -111,7 +111,7 @@ header h1 a:hover
         left: -100%;
         list-style: none;
         text-decoration: none;
-        height: calc(100dvh);
+        height: 100vh;
         background-color: var(--bg-color);
         padding: 20px 25px;
         transition: all .3s ease-in-out;;
@@ -124,7 +124,7 @@ header h1 a:hover
         position: fixed;
         top: 0;
         left: 0;
-        height: calc(100dvh);
+        height: 100vh;
     }
     
     header nav ul li a

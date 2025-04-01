@@ -1,4 +1,4 @@
-export const score = JSON.parse(localStorage.getItem("score")) ||
+export let score = JSON.parse(localStorage.getItem("score")) ||
 {
     maxWinStreak: 0,
     correctChoices: 0,
@@ -8,6 +8,18 @@ export const score = JSON.parse(localStorage.getItem("score")) ||
 export function saveScore()
 {
     localStorage.setItem("score", JSON.stringify(score));
+}
+
+export function resetScore()
+{
+    localStorage.removeItem("score");
+    score = 
+    {
+        maxWinStreak: 0,
+        correctChoices: 0,
+        wrongChoices: 0,
+    };
+    updateScore(0);
 }
 
 export function updateScore(crrentWinStreak)

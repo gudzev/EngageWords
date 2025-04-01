@@ -1,5 +1,5 @@
 import { words, Word} from "../data/words.js";
-import { score, updateScore} from "./score.js";
+import { score, updateScore, resetScore} from "./score.js";
 
 const gameDiv = document.querySelector(".game-container");
 
@@ -13,17 +13,25 @@ function playGame()
     gameDiv.innerHTML = randomWord.generateQuestionHTML();
 
     let currentWinStreakSpan = document.querySelector(".score-current-winstreak");
+    let resetBtn = document.querySelector(".reset-btn");
     currentWinStreakSpan.innerHTML = currentWinStreak;
+
+    resetBtn.addEventListener("click", () =>
+    {
+            currentWinStreak = 0;
+            currentWinStreakSpan.innerHTML = currentWinStreak;
+            resetScore();
+    });
 
     document.querySelectorAll(".word-meaning").forEach((word) =>
         {
             word.addEventListener("click", () =>
             {
-                let englishWord = document.querySelector(".english-word").textContent;
+                let englishWord = document.querySelector(".english-word");
                 let attemptSerbianWord = word.textContent;
                 let correctSerbianWord = undefined;
 
-                let correctWord = words.find(word => word.englishWord.trim() === englishWord.trim())
+                let correctWord = words.find(word => word.englishWord.trim() === englishWord.textContent.trim())
         
                 if(correctWord)
                 {
@@ -38,7 +46,6 @@ function playGame()
                     }
 
                     Word.availableWords.splice(correctWord, 1);
-                    console.log(Word.availableWords.length + ' ' + "words remaining to get guessed...");
 
                     currentWinStreak++;
                     score.correctChoices++;
@@ -53,6 +60,13 @@ function playGame()
                 }
                 else
                 {
+                    englishWord.classList.add("shake");
+
+                    setTimeout(() =>
+                    {
+                        englishWord.classList.remove("shake");
+                    }, 300);
+
                     currentWinStreak = 0;
                     score.wrongChoices++;
                     updateScore(currentWinStreak);
