@@ -1,4 +1,5 @@
 import { score } from "../scripts/score.js";
+import { removeDuplicates } from "../scripts/functions.js";
 
 export class Word
 {
@@ -113,10 +114,10 @@ export class Word
         }
 
         return array;
-      }
+    }
 }
 
-export const words = 
+export let words = 
 [
     new Word("contemporary", "savremen", ""),
     new Word("notion", "ideja, shvatanje", ""),
@@ -277,6 +278,85 @@ export const words =
     new Word("fiddle", "pozabaviti se", ""),
     new Word("wane", "oslabiti", ""),
     new Word("gusty", "nagli", ""),
+    new Word("fray", "sukob", ""),
+    new Word("serenade", "zabaviti nekoga", ""),
+    new Word("solely", "jedino, iskljucivo", ""),
+    new Word("leverage", "poluga, moc", ""),
+    new Word("cesspool", "septicka jama", ""),
+    new Word("shindig", "proslava", ""),
+    new Word("treacherous", "izdajnicki, opasan", ""),
+    new Word("frank", "iskren", ""),
+    new Word("lead", "olovo", ""),
+    new Word("plethora", "obilje", ""),
+    new Word("prickly", "bodljikav", ""),
+    new Word("feign", "pretvarati", ""),
+    new Word("latitude", "(geografska) sirina", ""),
+    new Word("offspring", "potomstvo", ""),
+    new Word("shrug", "slegnuti ramenima", ""),
+    new Word("grudge", "zlopamcenje", ""),
+    new Word("lament", "zaliti", ""),
+    new Word("kin", "rodbina", ""),
+    new Word("venture", "poduhvat", ""),
+    new Word("snare", "zamka", ""),
+    new Word("quarreled", "svadjati se", ""),
+    new Word("strife", "sukob", ""),
+    new Word("pitcher", "bokal", ""),
+    new Word("cider", "jabukovaca", ""),
+    new Word("pelvis", "karlica", ""),
+    new Word("conceal", "sakriti", ""),
+    new Word("stench", "smrad", ""),
+    new Word("soaking", "natopljen", ""),
+    new Word("threshold", "prag", ""),
+    new Word("stiff", "krut", ""),
+    new Word("tow", "vuci", ""),
+    new Word("lassies", "devojke", ""),
+    new Word("burrow", "rupa", ""),
+    new Word("marrow", "mozdina", ""),
+    new Word("vile", "podao", ""),
+    new Word("platitudes", "fraze", ""),
+    new Word("dwell", "stanovati", ""),
+    new Word("splendid", "velicanstven", ""),
+    new Word("stowed", "uskladisten", ""),
+    new Word("pale", "bled", ""),
+    new Word("visage", "lice", ""),
+    new Word("scourges", "bic", ""),
+    new Word("abduct", "oteti", ""),
+    new Word("rut", "kolotrazi", ""),
+    new Word("ploughing", "oranje", ""),
+    new Word("astray", "zalutao", ""),
+    new Word("errant", "lutajuci", ""),
+    new Word("jest", "sala", ""),
+    new Word("dumplings", "knedle", ""),
+    new Word("bolster", "podupreti", ""),
+    new Word("moth", "moljac", ""),
+    new Word("reticent", "cutljiv", ""),
+    new Word("consumptive", "tuberkulozan", ""),
+    new Word("abashed", "posramljen", ""),
+    new Word("demise", "smrt", ""),
+    new Word("mould", "budj", ""),
+    new Word("tender", "nezan", ""),
+    new Word("scent", "miris", ""),
+    new Word("entwisted", "upleten", ""),
+    new Word("glistening", "svetlucav", ""),
+    new Word("meticulous", "pedantan", ""),
+    new Word("celibacy", "celibat, neženstvo", ""),
+    new Word("cordially", "srdacno", ""),
+    new Word("scribe", "pisar", ""),
+    new Word("inconvenience", "neugodnost", ""),
+    new Word("poultry", "živina", ""),
+    new Word("preclude", "spreciti", ""),
+    new Word("augmented", "povecan", ""),
+    new Word("clung", "priljubio se", ""),
+    new Word("incantations", "završne čarolije", ""),
+    new Word("splinters", "trunje", ""),
+    new Word("bowel", "crevo", ""),
+    new Word("mince", "sitno seckati", ""),
+    new Word("nooks", "kutci", ""),
+    new Word("valiant", "hrabar", ""),
+    new Word("putrid", "gnjio", ""),
+    new Word("impetuous", "nagl", ""),
+    new Word("woven", "tkan", ""),
 ];
 
+words = removeDuplicates(words);
 Word.availableWords = Array.from(words);

@@ -45,7 +45,7 @@ function playGame()
                         console.log("you have won!!!");
                     }
 
-                    Word.availableWords.splice(correctWord, 1);
+                    Word.availableWords.splice(Word.availableWords.indexOf(correctWord), 1);
 
                     currentWinStreak++;
                     score.correctChoices++;
