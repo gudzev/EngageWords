@@ -18,7 +18,8 @@
     --accent-color: #2c3e50; 
     --page-bg-color: #212121;
     --page-bg-color-2: #303030;
-    --accent-color: rgb(218, 142, 3);
+    --accent-color: rgb(119, 76, 3);
+    --accent-hover: rgb(163, 106, 0);
 }
 
 .poppins-extralight 

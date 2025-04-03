@@ -150,7 +150,7 @@ export let words =
     new Word("relentless", "nemilosrdni", ""),
     new Word("impose", "metnuti", ""),
     new Word("depravity", "izopačenost", ""),
-    new Word("perpetual", "većito", ""),
+    new Word("perpetual", "večito", ""),
     new Word("impudence", "bezobrazluk", ""),
     new Word("vile", "odvratan", ""),
     new Word("futile", "uzaludan", ""),

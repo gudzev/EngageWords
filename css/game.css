@@ -129,7 +129,7 @@
 
 .reset-btn:hover
 {
-    color: rgb(252, 178, 42);
+    color: orange;
 }
 
 .score
@@ -156,7 +156,7 @@
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    outline: 1px solid var(--accent-color);
+    outline: 1px solid var(--accent-hover);
 }
 
 .reset-container
@@ -164,7 +164,7 @@
     min-width: 900px;
     width: 100%;
     grid-area: reset-container;
-    outline: 1px solid var(--accent-color);
+    outline: 1px solid var(--accent-hover);
     min-height: 30px;
 }
 
@@ -185,7 +185,7 @@
 
 .orange
 {
-    color: var(--accent-color);
+    color: var(--accent-hover);
     font-weight: bold;
 }
 
