@@ -47,6 +47,7 @@
     font-size: 1.1rem;
     transition: all .3s;
     max-height: 100px;
+    padding-top: 5px;
 }
 
 .hidden

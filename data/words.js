@@ -47,49 +47,27 @@ export class Word
         let wordArray = this.shuffle([correctWord[0], wrongWord1[0], wrongWord2[0], wrongWord3[0]]);
 
         return `
-
             <div class="game">
-
                 <h1 class="english-word">${correctWord[0].englishWord}</h1>
-    
                 <a class="word-meaning red">${wordArray[0].serbianMeaning}</a>
-    
                 <a class="word-meaning blue">${wordArray[1].serbianMeaning}</a>
-    
                 <a class="word-meaning yellow">${wordArray[2].serbianMeaning}</a>
-    
                 <a class="word-meaning green">${wordArray[3].serbianMeaning}</a>
-    
             </div>
-
             <div class="score">
-
                 <div class="score-container">
-
                     <h1>Broj pogođđenih za redom</h1>
-
                     <h2>Trenutno pogođenih reči za redom: <span class="orange score-current-winstreak"></span></h2>
-
                     <h2>Maksimalno pogođenih reči za redom: <span class="orange score-max-winstreak">${score.maxWinStreak}</span></h2>
-
                 </div>
-
                 <div class="score-container">
-
                     <h1>Statistika pogađanja</h1>
-
                     <h2>Tačnih reči: <span class="orange score-correct-choices">${score.correctChoices}</span></h2>
-
                     <h2>Netačnih reči: <span class="orange score-wrong-choices">${score.wrongChoices}</span></h2>
-
                 </div>
-
                 <div class="reset-container">
-
                     <a class="reset-btn orange"><i class="fa fa-refresh orange-icon-margin" aria-hidden="true"></i>Restartuj rezultat</a>
-
                 </div>
-
             </div>
         `;
     }

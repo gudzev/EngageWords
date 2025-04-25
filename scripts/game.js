@@ -42,7 +42,9 @@ function playGame()
                 {
                     if(!(Word.availableWords.length > 4))
                     {
-                        console.log("you have won!!!");
+                        Word.currentWordId = 0;
+                        Word.availableWords = words.map(w => new Word(w.englishWord, w.serbianMeaning, w.additionalMeaning));
+                        console.log("Pošto ste pogodili sve reči, lista reči je ažurirana.");
                     }
 
                     Word.availableWords.splice(Word.availableWords.indexOf(correctWord), 1);

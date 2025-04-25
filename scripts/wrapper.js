@@ -1,9 +1,9 @@
-window.onload = () => 
-    {
-        const wrapper = document.querySelector(".wrapper");
+window.addEventListener("load", () =>
+{
+    const wrapper = document.querySelector(".wrapper");
     
-        if(wrapper) 
-        {
-            wrapper.remove();
-        }
-    };
+    if(wrapper) 
+    {
+        wrapper.remove();
+    }
+});

@@ -1,10 +1,12 @@
 .wrapper
 {
     position: fixed;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
+    inset: 0;
+    background-color: var(--page-bg-color); 
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .game-container
